@@ -4,7 +4,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 {
     private float x;
     private float z;
-    private float speed = 5;
+    public static float speed = 5;
 
     void Start()
     {
