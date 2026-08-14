@@ -6,7 +6,7 @@ public class PlayerScene9 : MonoBehaviour
 {
     private Scene9 input;
 
-    public List<GameObject> bullets = new List<GameObject>();
+    private List<GameObject> bullets = new List<GameObject>();
 
     [SerializeField]
     private int countBullets = 10;
