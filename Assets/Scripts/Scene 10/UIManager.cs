@@ -16,7 +16,6 @@ public class UIManager : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("Scene 9");
-        Debug.Log("Игра началась");
     }
 
     public void Setings()
@@ -33,6 +32,7 @@ public class UIManager : MonoBehaviour
 
     public void Awake()
     {
+        DontDestroyOnLoad(gameObject);
         exit.interactable = false;
     }
 }

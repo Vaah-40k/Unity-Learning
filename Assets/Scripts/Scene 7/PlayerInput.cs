@@ -41,20 +41,18 @@ public class PlayerInput : MonoBehaviour
         {
             Debug.Log("Взаимодействие");
         }
-        // почему каждый из этих методов (сейчас код через Input System), вызывается трижды ?
     }
 
     public void OnSprint(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            speed = 10f; // я не понял как тут бекнуть скорость
+            speed = 10f;
         }
         else
         {
             speed = 5f;
         }
-        // а если в объект засунусть не нынешний объект, а какой-то левый?
     }
 
     private void Update()
